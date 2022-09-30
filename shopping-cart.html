@@ -1,10 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <title>OnlineShop - Panier</title>
 </head>
+
+
+<header>
+    <a href="index.html">
+      <img src="assets/img/logo.svg" alt="logo" width="250" height="50">
+    </a>
+  <nav>
+    <a href="index.html">Accueil</a>&emsp;&emsp;
+    <a href="products.html">Produits</a>&emsp;&emsp;
+    <a href="shopping-cart.html">Panier</a>&emsp;&emsp;
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
 <body>
-<!-- TODO -->
+
+<h1>Panier</h1>
+
+<br><br>
+
+<div>
+<table border="border">
+  <thead>
+    <tr>
+      <th></th>
+	  <th>Nom</th>
+      <th>Prix Unitaire</th>
+      <th>Quantité</th>
+	  <th>Prix</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="button" value="X"></td>
+      <td><a href="product.html">AppleTv</a></td>
+	  <td>249.99$</td>
+      <td>
+		<form>
+			<input type="button" value="-">
+			1
+			<input type="button" value="+">
+		</form>
+	  <td>249.99$</td>
+	  </td>
+    </tr>
+    <tr>
+      <td><input type="button" value="X"></td>
+      <td><a href="product.html">Canon EOS 5D MarkII</a></td>
+	  <td>2999.99$</td>
+	  <td>
+		<form>
+			<input type="button" value="-">
+			2
+			<input type="button" value="+">
+		</form>
+	  <td>5999.98$</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<br><br><br>
+
+<p>Total: 6249.97$</p>
+
+<p>
+<input type="button" value="Vider le panier">
+<a href="order.html">Commander</a>
+</p>
+
+<br><br><br>
+
+<footer>
+  <hr />
+  <table>
+	<tr>
+		<td>Arpad Botond Rigo</td>
+		<td>Matricule:20241538</td>
+	</tr>
+	<tr>
+		<td>Anna Oltean</td>
+		<td>Matricule:20252567</td>
+	</tr>
+
+</footer>
 </body>
 </html>
