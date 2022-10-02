@@ -6,5 +6,46 @@
 </head>
 <body>
 <!-- TODO -->
+<header>
+  <a href="index.html">
+    <img src="assets/img/logo.svg" alt="logo" width="250" height="50">
+  </a>
+<nav>
+  <a href="index.html">Accueil</a>&emsp;&emsp;
+  <a href="products.html">Produits</a>&emsp;&emsp;
+  <a href="shopping-cart.html">Panier</a>&emsp;&emsp;
+  <a href="contact.html">Contact</a>
+</nav>
+</header>
+<h1>Commande</h1>
+<form action="">
+  <fieldset>
+    <legend>Contact</legend>
+      Prénom:
+        <input type="text" id="firstname" name="firstname" size="20" maxlength="50" placeholder="Prénom" required/><br>
+      Nom de famille:
+        <input type="text" id="lastname" name="lastname" size="20" maxlength="50" placeholder="Nom de Famille" required/><br>
+      Email:
+        <input type="email" id="email" name="email" size="20" placeholder="xyz@something.org" required><br>
+      Téléphone:
+        <input type="text" id="phone" name="phone" size="20" placeholder="(438) 491-4984" required pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$">
+  </fieldset>
+  <input type="submit" value="Envoyer">
+  <input type="reset" value="Rétablir"
+</form>
+
+<footer>
+  <hr />
+  <table>
+	<tr>
+		<td>Arpad Botond Rigo</td>
+		<td>Matricule:20241538</td>
+	</tr>
+	<tr>
+		<td>Anna Oltean</td>
+		<td>Matricule:20252567</td>
+	</tr>
+
+</footer>
 </body>
 </html>
