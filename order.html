@@ -4,36 +4,43 @@
   <meta charset="UTF-8">
   <title>OnlineShop - Commande</title>
 </head>
-<body>
-<!-- TODO -->
 <header>
   <a href="index.html">
     <img src="assets/img/logo.svg" alt="logo" width="250" height="50">
   </a>
-<nav>
-  <a href="index.html">Accueil</a>&emsp;&emsp;
-  <a href="products.html">Produits</a>&emsp;&emsp;
-  <a href="shopping-cart.html">Panier</a>&emsp;&emsp;
-  <a href="contact.html">Contact</a>
-</nav>
+  <nav>
+    <a href="index.html">Accueil</a>&emsp;&emsp;
+    <a href="products.html">Produits</a>&emsp;&emsp;
+    <a href="shopping-cart.html">Panier</a>&emsp;&emsp;
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
-<h1>Commande</h1>
-<form action="">
-  <fieldset>
-    <legend>Contact</legend>
-      Prénom:
-        <input type="text" id="firstname" name="firstname" size="20" maxlength="50" placeholder="Prénom" required/><br>
-      Nom de famille:
-        <input type="text" id="lastname" name="lastname" size="20" maxlength="50" placeholder="Nom de Famille" required/><br>
-      Email:
-        <input type="email" id="email" name="email" size="20" placeholder="xyz@something.org" required><br>
-      Téléphone:
-        <input type="text" id="phone" name="phone" size="20" placeholder="(438) 491-4984" required pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$">
+<body>
+	<br><br>
+	<fieldset>
+		<form>
+			<fieldset>
+			<legend>Contact</legend>
+				<br>
+				Prénom: &nbsp<input type="text" id="firstname" placeholder="Prénom" pattern="[a-zA-Z]+" required><br><br>
+				Nom: &nbsp<input type="text" id="lastname" placeholder="Nom" pattern="[a-zA-Z]+" required><br><br>
+				Adresse courriel: &nbsp<input type="text" id="email" placeholder="xyz@something.something" required pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]"><br><br>
+				Numéro de téléphone: &nbsp<input type="text" id="phone" placeholder="(438) 491-4984" required pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$"><br><br>
+			</fieldset>
+			<fieldset>
+			<legend>Paiement</legend>
+				<br>
+				Numéro de carte de crédit: &nbsp<input type="text" id="creditcard" placeholder="Numéro de carte" pattern="[0-9]+" required><br><br>
+				Date d'expiration de la carte de crédit: &nbsp<input type="text" id="creditcardexpiry" placeholder="Date d'expiration" pattern="[0-9]+" required><br><br>
+			</fieldset>
+			<a href="confirmation.html">
+				<input type="submit" value=Payer>
+			</a>
+		</form>
   </fieldset>
-  <input type="submit" value="Envoyer">
-  <input type="reset" value="Rétablir"
-</form>
+  
 
+<br><br><br>
 <footer>
   <hr />
   <table>
