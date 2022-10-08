@@ -17,16 +17,45 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <div>
-    <button >Click-ez moi</button>
-  </div>
-  <div>
-    <a href="contact.html">
-    <h3>laptop</h3>
-    <img src="assets/img/laptop-1.png" alt="laptop-1">
-    <p>300$</p>
-  </a>
-</div>
+  <table border="1">
+     <th>
+      <h3>Filtrer les résultats</h3>
+    </th>
+    <th>
+      <h3>Produits</h3>
+    </th>
+   
+      <tr>
+        <td>
+          <!--Boutons de filtration-->
+          <div id="productcategories">
+            <h5>Catégorie de produits</h5>
+            <button>Appareil photos</button><br>
+            <button>Consoles</button><br>
+            <button>Écrans</button><br>
+            <button>Ordinateurs</button><br>
+            <button>Tous les produits</button><br>
+          </div>
+          <div id="productcriteria">
+            <h5>Critères de triage</h5>
+            <button>Prix (bas-haut)</button><br>
+            <button>Prix (haut-bas)</button><br>
+            <button>Nom (A-Z)</button><br>
+            <button>Nom (Z-A)</button><br>
+          </div>
+        </td>
+        <td>
+          <div>
+            <a href="product.html">
+              <h3>laptop</h3>
+              <img src="assets/img/laptop-1.png" alt="laptop-1" width="350" height="300">
+              <p>300$</p>
+            </a>
+          </div>
+        </td>
+      </tr>
+    
+</table>
 <footer>
   <hr />
   <table>
@@ -42,3 +71,9 @@
 </footer>
 </body>
 </html>
+<!--
+   Prix (bas-haut) (valeur par défaut) ;
+• Prix (haut-bas) ;
+• Nom (A-Z) ;
+• Nom (Z-A).
+-->
