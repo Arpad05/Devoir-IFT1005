@@ -25,57 +25,51 @@
 <h1>Panier</h1>
 
 <br><br>
-
 <div>
-<table border="border">
-  <thead>
-    <tr>
-      <th></th>
-	  <th>Nom</th>
-      <th>Prix Unitaire</th>
-      <th>Quantité</th>
-	  <th>Prix</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><input type="button" value="X"></td>
-      <td><a href="product.html">AppleTv</a></td>
-	  <td>249.99$</td>
-      <td>
-		<form>
-			<input type="button" value="-">
-			1
-			<input type="button" value="+">
-		</form>
-	  <td>249.99$</td>
-	  </td>
-    </tr>
-    <tr>
-      <td><input type="button" value="X"></td>
-      <td><a href="product.html">Canon EOS 5D MarkII</a></td>
-	  <td>2999.99$</td>
-	  <td>
-		<form>
-			<input type="button" value="-">
-			2
-			<input type="button" value="+">
-		</form>
-	  <td>5999.98$</td>
-    </tr>
-  </tbody>
-</table>
+  <form action="order.html">
+    <table border="border">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Nom</th>
+          <th>Prix Unitaire</th>
+          <th>Quantité</th>
+          <th>Prix</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="button" value="X"></td>
+          <td><a href="product.html">AppleTv</a></td>
+          <td><p>249.99$</p></td>
+          <td>
+            <input type="button" value="-">
+            <input type="number" value="1" min="1">
+            <input type="button" value="+">
+          </td>
+          <td><p>249.99$</p></td>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" value="X"></td>
+          <td><a href="product.html">Canon EOS 5D MarkII</a></td>
+          <td><p>2999.99$</p></td>
+          <td>
+            <input type="button" value="-">
+            <input type="number" value="2" min="1">
+            <input type="button" value="+">
+          </td>
+          <td><p>5999.98$</p></td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br><br>
+    <p>Total: 6249.97$</p>
+    <a href="order.html">Commander</a>
+    <br><br>
+    <input type="reset" value="Vider le panier">
+  </form>
 </div>
-
-<br><br><br>
-
-<p>Total: 6249.97$</p>
-
-<p>
-<input type="button" value="Vider le panier">
-<a href="order.html">Commander</a>
-</p>
-
 <br><br><br>
 
 <footer>
