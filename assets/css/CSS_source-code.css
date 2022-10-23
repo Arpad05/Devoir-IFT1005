@@ -14,3 +14,9 @@ header{
   padding: 0px 20px;
   font-size: 18px;
 }
+footer{
+  background-color: #eeeeee;
+  height: 70px;
+  max-width: 1200px;
+  border-top: 1px solid #cccccc;
+}
