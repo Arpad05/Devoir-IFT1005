@@ -1,0 +1,16 @@
+header{
+  background-color: #14597f;
+  max-width: 1200px;
+  height: 60px;
+}
+#logolink{
+  float: left;
+  font-size: 18px;
+}
+#navlink{
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  padding: 0px 20px;
+  font-size: 18px;
+}
