@@ -1,22 +1,31 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 18px;
+}
+body{
+  max-width: 1200px;
+  padding: 0px 20px;
+}
 header{
   background-color: #14597f;
-  max-width: 1200px;
   height: 60px;
 }
 #logolink{
   float: left;
   font-size: 18px;
+  padding: 0px 20px;
 }
 #navlink{
   float: right;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
   padding: 0px 20px;
-  font-size: 18px;
+  padding: 0px 20px;
+}
+#footertable{
+  padding: 0px 20px;
 }
 footer{
   background-color: #eeeeee;
   height: 70px;
-  max-width: 1200px;
   border-top: 1px solid #cccccc;
 }
