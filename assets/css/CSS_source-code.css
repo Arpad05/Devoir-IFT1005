@@ -3,9 +3,39 @@
   color: black;
   font-size: 18px;
 }
+body{
+  display: flex;
+  flex-direction: column;
+}
 #contenu{
+  flex: 1 0 auto;
   max-width: 1200px;
   padding: 0px 20px;
+}
+.fa-shopping-cart{
+  float:right;
+  color: #14597f;
+}
+.count{
+  float: right;
+  color: #d9534f;
+}
+.button{
+  background-color: #14597f;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0b2d3d;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+.button:hover{
+  background-color: #1fb5e9;
+}
+#homeImage{
+  float: right;
+  width: 600px;
+  height: auto;
+  height: auto;
 }
 header{
   background-color: #14597f;
@@ -25,6 +55,7 @@ header{
   padding: 0px 20px;
 }
 footer{
+  flex-shrink: 0;
   background-color: #eeeeee;
   height: 70px;
   border-top: 1px solid #cccccc;

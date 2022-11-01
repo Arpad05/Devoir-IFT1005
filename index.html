@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>OnlineShop - Accueil</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/CSS_source-code.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/CSS_source-code.css">
   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/release/v.5.3.1/css/all.css">
 </head>
 
@@ -19,9 +19,14 @@
       </a>
       <a href="index.html" id="navlink">Accueil</a>
       <a href="products.html" id="navlink">Produits</a>
-      <a href="shopping-cart.html" id="navlink">Panier</a>
       <a href="contact.html" id="navlink">Contact</a>
-
+      <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-shopping-cart fa-stack-1x"></i>
+        </span>
+        <span class="count">3</span>
+      </a>
     </nav>
   </header>
   <div id="contenu">
@@ -29,12 +34,12 @@
   <h1>Bonjour et bienvenue sur Online Shop!</h1> <br>
   <br>
   <br>
-  <img src="assets/img/home.png" alt="image accueil" width="600" height="auto">
+  <img src="assets/img/home.png" id="homeImage" alt="image accueil">
   <br>
   <br>
   Vous trouverez ici tout vos produits nécessaires pour rester branché pendant toute l'année.
   <br>
-  <a href="products.html">Alors n'attendez pas et branchez-vous!</a>
+  <button onclick="window.location.href ='products.html';" class="button" type="button">Alors n'attendez pas et branchez-vous!</button>
   </p>
   </div>
   <footer>
