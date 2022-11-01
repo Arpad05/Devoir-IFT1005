@@ -1,63 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <title>OnlineShop - Commande</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/CSS_source-code.css">
-  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/release/v.5.3.1/css/all.css">
+	<meta charset="UTF-8">
+	<title>OnlineShop - Commande</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/CSS_source-code.css">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/release/v.5.3.1/css/all.css">
 </head>
-<header>
-  <nav>
-    <a href="index.html" id="logolink">
-      <!--les caracthéristiques width et height sont des attributs html supporté par html5
-      pour certaines éléments comme des images-->
-      <!--test-->
-      <img src="assets/img/logo.svg" alt="logo" width="250" height="50">
-    </a>
-    <a href="index.html" id="navlink">Accueil</a>
-    <a href="products.html" id="navlink">Produits</a>
-    <a href="shopping-cart.html" id="navlink">Panier</a>
-    <a href="contact.html" id="navlink">Contact</a>
 
-  </nav>
-</header>
 <body>
-	<br><br>
-	<fieldset>
-		<form action="confirmation.html">
-			<fieldset>
-			<legend>Contact</legend>
-				<br>
-				Prénom: &nbsp<input type="text" id="firstname" placeholder="Prénom" pattern="[a-zA-Z]+" required><br><br>
-				Nom: &nbsp<input type="text" id="lastname" placeholder="Nom" pattern="[a-zA-Z]+" required><br><br>
-				Adresse courriel: &nbsp<input type="text" id="email" placeholder="xyz@something.something" required pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]"><br><br>
-				Numéro de téléphone: &nbsp<input type="text" id="phone" placeholder="(438) 491-4984" required pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$"><br><br>
-			</fieldset>
-			<fieldset>
-			<legend>Paiement</legend>
-				<br>
-				Numéro de carte de crédit: &nbsp<input type="text" id="creditcard" placeholder="Numéro de carte" pattern="[0-9]+" required><br><br>
-				Date d'expiration de la carte de crédit: &nbsp<input type="text" id="creditcardexpiry" placeholder="Date d'expiration" pattern="[0-9]+" required><br><br>
-			</fieldset>
-			<a href="confirmation.html">
-				<input type="submit" value=Payer >
+	<header>
+		<nav>
+			<a href="index.html" id="logolink">
+				<!--les caracthéristiques width et height sont des attributs html supporté par html5
+      pour certaines éléments comme des images-->
+				<!--test-->
+				<img src="assets/img/logo.svg" alt="logo" width="250" height="50">
 			</a>
-		</form>
-  </fieldset>
+			<a href="index.html" id="navlink">Accueil</a>
+			<a href="products.html" id="navlink">Produits</a>
+			<a href="shopping-cart.html" id="navlink">Panier</a>
+			<a href="contact.html" id="navlink">Contact</a>
+
+		</nav>
+	</header>
+	<div id="contenu">
+		<br><br>
+		<fieldset>
+			<form action="confirmation.html">
+				<fieldset>
+					<legend>Contact</legend>
+					<br>
+					Prénom: &nbsp<input type="text" id="firstname" placeholder="Prénom" pattern="[a-zA-Z]+"
+						required><br><br>
+					Nom: &nbsp<input type="text" id="lastname" placeholder="Nom" pattern="[a-zA-Z]+" required><br><br>
+					Adresse courriel: &nbsp<input type="text" id="email" placeholder="xyz@something.something" required
+						pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]"><br><br>
+					Numéro de téléphone: &nbsp<input type="text" id="phone" placeholder="(438) 491-4984" required
+						pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$"><br><br>
+				</fieldset>
+				<fieldset>
+					<legend>Paiement</legend>
+					<br>
+					Numéro de carte de crédit: &nbsp<input type="text" id="creditcard" placeholder="Numéro de carte"
+						pattern="[0-9]+" required><br><br>
+					Date d'expiration de la carte de crédit: &nbsp<input type="text" id="creditcardexpiry"
+						placeholder="Date d'expiration" pattern="[0-9]+" required><br><br>
+				</fieldset>
+				<a href="confirmation.html">
+					<input type="submit" value=Payer>
+				</a>
+			</form>
+		</fieldset>
 
 
-<br><br><br>
-<footer>
-  <table>
-	<tr>
-		<td>Arpad Botond Rigo</td>
-		<td>Matricule:20241538</td>
-	</tr>
-	<tr>
-		<td>Anna Oltean</td>
-		<td>Matricule:20252567</td>
-	</tr>
+		<br><br><br>
+	</div>
+	<footer>
+		<table>
+			<tr>
+				<td>Arpad Botond Rigo</td>
+				<td>Matricule:20241538</td>
+			</tr>
+			<tr>
+				<td>Anna Oltean</td>
+				<td>Matricule:20252567</td>
+			</tr>
 
-</footer>
+	</footer>
 </body>
+
 </html>
