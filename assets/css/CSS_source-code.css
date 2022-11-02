@@ -12,13 +12,20 @@ body{
   max-width: 1200px;
   padding: 0px 20px;
 }
-.fa-shopping-cart{
+.shopping-cart{
   float:right;
   color: #14597f;
 }
 .count{
-  float: right;
-  color: #d9534f;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  border: solid;
+  border-radius: 50%;
+  border-color: #d9534f;
+  background-color: #d9534f;
+  top: 10px;
+  right: 18px;
 }
 .button{
   background-color: #14597f;
