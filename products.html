@@ -18,9 +18,9 @@
         <!--test-->
         <img src="assets/img/logo.svg" alt="logo" width="250" height="50">
       </a>
-      <a href="index.html" id="navlink">Accueil</a>
-      <a href="products.html" id="navlink">Produits</a>
-      <a href="contact.html" id="navlink">Contact</a>
+      <a href="index.html" id="navlink" class="active">Accueil</a>
+      <a href="products.html" id="navlink" class="active">Produits</a>
+      <a href="contact.html" id="navlink" class="active">Contact</a>
       <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
         <span class="fa-stack fa-lg">
           <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
@@ -31,18 +31,20 @@
     </nav>
   </header>
   <div id="contenu">
-    <table border="1" id="productslist">
-      <th>
+    <table id="productslist">
+      <div>
+      <th class="titre">
         <h3>Filtrer les résultats</h3>
       </th>
-      <th colspan="3">
+      <th colspan="3" class="titre">
         <h3>Produits</h3>
       </th>
-
+      </div>
       <tr>
-        <td rowspan="2">
+        <div>
+        <td rowspan="2" class="barreLateral">
           <!--Boutons de filtration-->
-          <div "class=" btn-group" "id=" productcategories">
+          <div class=" btn-group" id=" productcategories">
             <h4>Catégorie de produits</h4>
             <button>Appareil photos</button><br>
             <button>Consoles</button><br>
@@ -58,6 +60,7 @@
             <button>Nom (Z-A)</button><br>
           </div>
         </td>
+      </div>
         <!--premier ligne de produits-->
         <td>
           <div name="computers" id="5">
