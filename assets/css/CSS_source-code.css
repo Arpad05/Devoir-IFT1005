@@ -76,6 +76,7 @@ footer{
   border-top: 1px solid #cccccc;
 }
 .barreLateral{
+  position: relative;
   border: inset 3px;
   max-width: 25%;
   padding-right: 20px;
@@ -83,6 +84,38 @@ footer{
 .produits{
   max-width: 75%;
 }
-.titre{
+.mainborder{
   border: inset 5px;
+}
+.productsborder{
+  border-style: solid;
+  border-color: #999999;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+.productsborder:hover{
+  background-color: #f3f3f3;
+}
+.prixproducts{
+  float: right;
+  padding-right: 10px;
+}
+#productslist{
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+.categorybuttons{
+  border: solid #999999;
+  border-radius: 4px;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+.categorybuttons:hover{
+  background-color: #f3f3f3;
+}
+.selected{
+  transition: background-color 0s;
+}
+.selected::selection{
+  background-color: #ddf2fb;
 }
