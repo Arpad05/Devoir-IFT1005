@@ -75,6 +75,7 @@ header{
   font-size: 18px;
 }
 .navlink{
+  text-decoration: none;
   margin-top: 15px;
   float: right;
   padding: 0px 20px;
@@ -184,6 +185,7 @@ footer{
 #btncommande, #total{
   float:right;
   clear:right;
+  text-decoration: none;
 }
 #btnvider{
   float:left
