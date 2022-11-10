@@ -4,6 +4,7 @@
   font-size: 18px;
 }
 html{
+  margin: auto;
   height: 100%;
 }
 body{
@@ -11,10 +12,10 @@ body{
   display: flex;
   flex-direction: column;
 }
-#contenu{
+.contenu{
   position: relative;
   flex: 1 0 auto;
-  width: 1200px;
+  width: 1160px;
   padding: 0px 20px;
   margin: auto;
 }
@@ -59,9 +60,8 @@ header{
   background-color: #14597f;
   height: 60px;
   color: #FFFFFF;
-  padding: 0px 20px;
 }
-.active:active{
+.active:active, .pagecourante{
   background-color: #1fb5e9;
   border-style: solid;
   border-radius: 4px;
@@ -69,23 +69,26 @@ header{
 }
 
 /*Entête*/
-#logolink{
+.logolink{
   margin-top: 5px;
   float: left;
   font-size: 18px;
-  padding: 0px 20px;
 }
-#navlink{
+.navlink{
   margin-top: 15px;
   float: right;
   padding: 0px 20px;
 }
 
 /*Pied de page*/
-#footertable{
+.footertable{
   margin-left: auto;
   margin-right: auto;
   padding: 0px 20px;
+}
+.entete{
+  width: 1160px;
+  margin: auto;
 }
 footer{
   flex-shrink: 0;

@@ -9,30 +9,32 @@
 
 <body>
   <header>
-    <nav>
-      <a href="index.html" id="logolink">
-        <!--les caracthéristiques width et height sont des attributs html supporté par html5
-      pour certaines éléments comme des images-->
-        <!--test-->
-        <img src="assets/img/logo.svg" alt="logo" width="250" height="50">
-      </a>
-      <a href="index.html" id="navlink" class="active">Accueil</a>
-      <a href="products.html" id="navlink" class="active">Produits</a>
-      <a href="contact.html" id="navlink" class="active">Contact</a>
-      <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-          <i class="fa fa-shopping-cart fa-stack-1x"></i>
-        </span>
-        <span class="count">3</span>
-      </a>
-    </nav>
+    <div class="entete">
+      <nav>
+        <a href="index.html" class="logolink">
+          <!--les caracthéristiques width et height sont des attributs html supporté par html5
+        pour certaines éléments comme des images-->
+          <!--test-->
+          <img src="assets/img/logo.svg" alt="logo" width="250" height="50">
+        </a>
+        <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-shopping-cart fa-stack-1x"></i>
+          </span>
+          <span class="count">3</span>
+        </a>
+        <a href="contact.html" class="navlink active">Contact</a>
+        <a href="products.html" class="navlink active">Produits</a>
+        <a href="index.html" class="navlink active">Accueil</a>
+      </nav>
+    </div>
   </header>
-  <div id="contenu">
+  <div class="contenu">
     <h1>Panier</h1>
 
     <br><br>
-    <div id="contenu">
+    <div>
       <form action="order.html">
         <table id="paniertable">
           <thead>
@@ -87,7 +89,7 @@
     <br><br><br>
   </div>
   <footer>
-    <table id="footertable">
+    <table class="footertable">
       <tr>
         <td>Arpad Botond Rigo</td>
         <td>Matricule:20241538</td>
