@@ -12,6 +12,7 @@ body{
   flex-direction: column;
 }
 #contenu{
+  position: relative;
   flex: 1 0 auto;
   max-width: 1200px;
   padding: 0px 20px;
@@ -35,6 +36,7 @@ body{
   right: 18px;
 }
 .button{
+  color:white;
   background-color: #14597f;
   border-style: solid;
   border-width: 1px;
@@ -49,6 +51,7 @@ body{
   float: right;
   width: 600px;
   height: auto;
+  width: 200px;
   height: auto;
 }
 header{
@@ -56,6 +59,7 @@ header{
   background-color: #14597f;
   height: 60px;
   color: #FFFFFF;
+  padding: 0px 20px;
 }
 .active:active{
   background-color: #1fb5e9;
@@ -63,6 +67,8 @@ header{
   border-radius: 4px;
   border-width: 2px;
 }
+
+/*Entête*/
 #logolink{
   margin-top: 5px;
   float: left;
@@ -74,6 +80,8 @@ header{
   float: right;
   padding: 0px 20px;
 }
+
+/*Pied de page*/
 #footertable{
   margin-left: auto;
   margin-right: auto;
@@ -130,4 +138,57 @@ footer{
 }
 .selected::selection{
   background-color: #ddf2fb;
+}
+
+/*général*/
+.form-control{
+  border:1px solid #999999;
+  border-radius: 4px;
+}
+.col{
+  display: flex;
+  text-align:center;
+  flex-wrap:wrap;
+}
+.row{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Page Contact*/
+.col1, .col2, .col3{
+  width:33.33%;
+}
+
+/*Page Panier*/
+#paniertable, #paniertable thead th{
+  border-bottom: 1px solid black;
+}
+#paniertable td:first-child{
+  width: 30px;
+}
+#paniertable td:last-child{
+  text-align:right;
+}
+.btnpanier{
+  width: 22px;
+  height: 22px;
+  border-radius:11px;
+  background-color:#dddddd;
+}
+.btnpanier:hover{
+  background-color: #bbbbbb;
+}
+
+#btncommande, #total{
+  float:right;
+  clear:right;
+}
+#btnvider{
+  float:left
+}
+
+/*Page de commande*/
+.col1commande, .col2commande{
+  width:50%;
 }
