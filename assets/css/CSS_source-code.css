@@ -14,7 +14,7 @@ body{
 #contenu{
   position: relative;
   flex: 1 0 auto;
-  max-width: 1200px;
+  width: 1200px;
   padding: 0px 20px;
   margin: auto;
 }
