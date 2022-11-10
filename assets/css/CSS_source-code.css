@@ -1,7 +1,9 @@
 *{
   font-family: Arial, Helvetica, sans-serif;
   color: black;
-  font-size: 18px;
+}
+h1{
+  font-size: 26px;
 }
 html{
   margin: auto;
@@ -99,20 +101,13 @@ footer{
 }
 .barreLateral{
   position: relative;
-  border: inset 3px;
-  max-width: 25%;
+  width: 25%;
   padding-right: 20px;
 }
-.produits{
-  max-width: 75%;
-}
-.mainborder{
-  border: inset 5px;
+.barreproduits{
+  width: 75%;
 }
 .productsborder{
-  border-style: solid;
-  border-color: #999999;
-  border-radius: 4px;
   transition: background-color 0.2s;
 }
 .productsborder:hover{
@@ -121,6 +116,10 @@ footer{
 .prixproducts{
   float: right;
   padding-right: 10px;
+}
+.mainboard{
+  text-align: left;
+  font-size: larger;
 }
 #productslist{
   border-collapse: separate;
