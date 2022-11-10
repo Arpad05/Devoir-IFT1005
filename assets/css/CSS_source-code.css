@@ -99,10 +99,17 @@ footer{
   height: 70px;
   border-top: 1px solid #cccccc;
 }
+.regroupementbouttons{
+  margin-top: 5px;
+}
 .barreLateral{
+  margin-top: 5px;
   position: relative;
   width: 25%;
   padding-right: 20px;
+}
+.barreLateral[rowspan]{
+  vertical-align: top;
 }
 .barreproduits{
   width: 75%;
@@ -126,7 +133,10 @@ footer{
   border-spacing: 5px;
 }
 .categorybuttons{
-  border: solid #999999;
+  cursor: pointer; 
+  height: 30px;
+  width: 100%;
+  border: 1px solid #999999;
   border-radius: 4px;
   font-size: 12px;
   transition: background-color 0.2s;
@@ -137,7 +147,7 @@ footer{
 .selected{
   transition: background-color 0s;
 }
-.selected::selection{
+.selected:selection{
   background-color: #ddf2fb;
 }
 
@@ -170,6 +180,12 @@ footer{
 }
 #paniertable td:last-child{
   text-align:right;
+}
+.btn-group{
+  display: block;
+}
+.btn-group:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
 }
 .btnpanier{
   width: 22px;
