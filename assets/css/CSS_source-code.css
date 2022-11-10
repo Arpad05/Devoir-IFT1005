@@ -88,7 +88,6 @@ header{
   padding: 0px 20px;
 }
 footer{
-  margin: auto;
   flex-shrink: 0;
   background-color: #eeeeee;
   height: 70px;

@@ -34,7 +34,7 @@
     <br><br>
     <div id="contenu">
       <form action="order.html">
-        <table border="border">
+        <table id="paniertable">
           <thead>
             <tr>
               <th></th>
@@ -46,15 +46,15 @@
           </thead>
           <tbody>
             <tr>
-              <td><input type="button" value="X"></td>
+              <td><input type="button" value="X" class="btnpanier"></td>
               <td><a href="product.html">AppleTv</a></td>
               <td>
                 <p>249.99$</p>
               </td>
               <td>
-                <input type="button" value="-">
-                <input type="number" value="1" min="1">
-                <input type="button" value="+">
+                <input type="button" value="-" class="btnpanier">
+                1
+                <input type="button" value="+" class="btnpanier">
               </td>
               <td>
                 <p>249.99$</p>
@@ -62,15 +62,15 @@
               </td>
             </tr>
             <tr>
-              <td><input type="button" value="X"></td>
+              <td><input type="button" value="X" class="btnpanier"></td>
               <td><a href="product.html">Canon EOS 5D MarkII</a></td>
               <td>
                 <p>2999.99$</p>
               </td>
               <td>
-                <input type="button" value="-">
-                <input type="number" value="2" min="1">
-                <input type="button" value="+">
+                <input type="button" value="-" class="btnpanier">
+                2
+                <input type="button" value="+" class="btnpanier">
               </td>
               <td>
                 <p>5999.98$</p>
@@ -78,17 +78,16 @@
             </tr>
           </tbody>
         </table>
-        <br><br><br>
-        <p>Total: 6249.97$</p>
-        <a href="order.html">Commander</a>
-        <br><br>
-        <input type="reset" value="Vider le panier">
+        <p id="total">Total: 6249.97$</p>
+        <a href="order.html" id="btncommande" class="button">Commander</a>
+        <input type="reset" value="Vider le panier" id="btnvider" class="button">
       </form>
+    <br><br><br>
     </div>
     <br><br><br>
   </div>
   <footer>
-    <table table id="footertable">
+    <table id="footertable">
       <tr>
         <td>Arpad Botond Rigo</td>
         <td>Matricule:20241538</td>

@@ -32,38 +32,40 @@
 	  </header>
 	<div id="contenu">
 		<br><br>
-		<fieldset>
-			<form action="confirmation.html">
-				<fieldset>
-					<legend>Contact</legend>
+			<form action="confirmation.html" class="row">
+				<h2>Contact</h2>
+				<section class="col">
 					<br>
-					Prénom: &nbsp<input type="text" id="firstname" placeholder="Prénom" pattern="[a-zA-Z]+"
-						required><br><br>
-					Nom: &nbsp<input type="text" id="lastname" placeholder="Nom" pattern="[a-zA-Z]+" required><br><br>
-					Adresse courriel: &nbsp<input type="text" id="email" placeholder="xyz@something.something" required
-						pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]"><br><br>
-					Numéro de téléphone: &nbsp<input type="text" id="phone" placeholder="(438) 491-4984" required
-						pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$"><br><br>
-				</fieldset>
-				<fieldset>
-					<legend>Paiement</legend>
-					<br>
-					Numéro de carte de crédit: &nbsp<input type="text" id="creditcard" placeholder="Numéro de carte"
-						pattern="[0-9]+" required><br><br>
-					Date d'expiration de la carte de crédit: &nbsp<input type="text" id="creditcardexpiry"
-						placeholder="Date d'expiration" pattern="[0-9]+" required><br><br>
-				</fieldset>
+					<div class="col1commande">
+					Prénom: &nbsp<br><input type="text" id="firstname" placeholder="Prénom" pattern="[a-zA-Z]+" class="form-control" required><br><br>
+					Nom: &nbsp<br><input type="text" id="lastname" placeholder="Nom" pattern="[a-zA-Z]+" required class="form-control"><br><br>
+					</div>
+					<div class="col2commande">
+					Adresse courriel: &nbsp<br><input type="text" id="email" placeholder="xyz@something.something" required class="form-control" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]"><br><br>
+					Numéro de téléphone: &nbsp<br><input type="text" id="phone" placeholder="(438) 491-4984" required class="form-control" pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$"><br><br>
+					</div>
+				</section>
+				<h2>Paiement</h2>
+				<section class="col">
+					
+					<div class="col1commande">
+					Numéro de carte de crédit: &nbsp<br><input type="text" id="creditcard" placeholder="Numéro de carte" pattern="[0-9]+" required class="form-control"><br><br>
+					</div>
+					<div class="col2commande">
+					Date d'expiration de la carte de crédit: &nbsp<br><input type="text" id="creditcardexpiry" placeholder="Date d'expiration" pattern="[0-9]+" required class="form-control">
+					</div>
+				<br><br>
+				</section>
 				<a href="confirmation.html">
-					<input type="submit" value=Payer>
+					<input type="submit" value=Payer class="button">
 				</a>
 			</form>
-		</fieldset>
 
 
 		<br><br><br>
 	</div>
 	<footer>
-		<table table id="footertable">
+		<table id="footertable">
 			<tr>
 				<td>Arpad Botond Rigo</td>
 				<td>Matricule:20241538</td>
