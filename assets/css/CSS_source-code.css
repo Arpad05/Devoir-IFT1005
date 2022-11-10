@@ -89,7 +89,6 @@ header{
 }
 footer{
   margin: auto;
-  width: 1200px;
   flex-shrink: 0;
   background-color: #eeeeee;
   height: 70px;
