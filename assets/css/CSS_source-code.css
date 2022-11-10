@@ -77,6 +77,7 @@ header{
   font-size: 18px;
 }
 .navlink{
+  color: #FFF;
   text-decoration: none;
   margin-top: 15px;
   float: right;
@@ -136,11 +137,10 @@ footer{
   border-spacing: 5px;
 }
 .categorybuttons{
+  background-color: #FFF;
   cursor: pointer; 
   height: 30px;
   width: 100%;
-  border: 1px solid #999999;
-  border-radius: 4px;
   font-size: 12px;
   transition: background-color 0.2s;
 }
@@ -185,9 +185,11 @@ footer{
   text-align:right;
 }
 .btn-group{
+  border:1px solid #999999;
+  border-radius: 4px;
   display: block;
 }
-.btn-group:not(:last-child) {
+.btn-group button:not(:last-child) {
   border-bottom: none; /* Prevent double borders */
 }
 .btnpanier{
