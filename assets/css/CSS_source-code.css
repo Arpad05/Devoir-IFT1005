@@ -137,6 +137,14 @@ footer{
   border-collapse: separate;
   border-spacing: 5px;
 }
+.btn-group{
+  border:1px solid #999999;
+  border-radius: 4px;
+  display: block;
+}
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
 .categorybuttons{
   background-color: #FFF;
   cursor: pointer; 
@@ -173,25 +181,26 @@ footer{
 /*Page Contact*/
 .col1, .col2, .col3{
   width:33.33%;
+  text-align:center;
 }
 
+/*Page d'un produit*/
+
+
 /*Page Panier*/
-#paniertable, #paniertable thead th{
+#paniertable{
+  text-align:left;
+  border-bottom: 1px solid black;
+  width:100%;
+}
+#paniertable thead th{
   border-bottom: 1px solid black;
 }
 #paniertable td:first-child{
-  width: 30px;
+  width: 28px;
 }
 #paniertable td:last-child{
   text-align:right;
-}
-.btn-group{
-  border:1px solid #999999;
-  border-radius: 4px;
-  display: block;
-}
-.btn-group button:not(:last-child) {
-  border-bottom: none; /* Prevent double borders */
 }
 .btnpanier{
   width: 22px;
@@ -203,7 +212,7 @@ footer{
   background-color: #bbbbbb;
 }
 
-#btncommande, #total{
+#btncommande, #total, #btnpayer, #formajout{
   float:right;
   clear:right;
   text-decoration: none;
@@ -213,6 +222,12 @@ footer{
 }
 
 /*Page de commande*/
-.col1commande, .col2commande{
+.col50st, .col50nd{
   width:50%;
+}
+#firstname, #lastname, #creditcard{
+  width:90%;
+}
+#creditcardexpiry, #email, #phone{
+  width:100%;
 }

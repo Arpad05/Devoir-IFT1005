@@ -38,11 +38,11 @@
 				<h2>Contact</h2>
 				<section class="col">
 					<br>
-					<div class="col1commande">
+					<div class="col50st">
 					Prénom: &nbsp<br><input type="text" id="firstname" placeholder="Prénom" pattern="[a-zA-Z]+" class="form-control" required><br><br>
 					Nom: &nbsp<br><input type="text" id="lastname" placeholder="Nom" pattern="[a-zA-Z]+" required class="form-control"><br><br>
 					</div>
-					<div class="col2commande">
+					<div class="col50nd">
 					Adresse courriel: &nbsp<br><input type="text" id="email" placeholder="xyz@something.something" required class="form-control" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]"><br><br>
 					Numéro de téléphone: &nbsp<br><input type="text" id="phone" placeholder="(438) 491-4984" required class="form-control" pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$"><br><br>
 					</div>
@@ -50,16 +50,16 @@
 				<h2>Paiement</h2>
 				<section class="col">
 					
-					<div class="col1commande">
+					<div class="col50st">
 					Numéro de carte de crédit: &nbsp<br><input type="text" id="creditcard" placeholder="Numéro de carte" pattern="[0-9]+" required class="form-control"><br><br>
 					</div>
-					<div class="col2commande">
+					<div class="col50nd">
 					Date d'expiration de la carte de crédit: &nbsp<br><input type="text" id="creditcardexpiry" placeholder="Date d'expiration" pattern="[0-9]+" required class="form-control">
 					</div>
 				<br><br>
 				</section>
 				<a href="confirmation.html">
-					<input type="submit" value=Payer class="button">
+					<input type="submit" id="btnpayer" value=Payer class="button">
 				</a>
 			</form>
 
