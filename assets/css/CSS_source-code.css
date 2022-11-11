@@ -1,7 +1,9 @@
+/*général*/
 *{
   font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
+
 h1{
   font-size: 26px;
 }
@@ -21,6 +23,59 @@ body{
   padding: 0px 20px;
   margin: auto;
 }
+
+.form-control{
+  border:1px solid #999999;
+  border-radius: 4px;
+}
+.button{
+  color:white;
+  background-color: #14597f;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0b2d3d;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+.button:hover{
+  background-color: #1fb5e9;
+}
+.col{
+  display: flex;
+  flex-wrap:wrap;
+}
+.row{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Entete*/
+header{
+  text-align: center;
+  background-color: #14597f;
+  height: 60px;
+  color: #FFFFFF;
+}
+.active:active, .pagecourante{
+  background-color: #1fb5e9;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 2px;
+}
+
+.logolink{
+  margin-top: 5px;
+  float: left;
+  font-size: 18px;
+}
+.navlink{
+  color: #FFF;
+  text-decoration: none;
+  margin-top: 15px;
+  float: right;
+  padding: 0px 20px;
+}
+
 .shopping-cart{
   margin-top: 7px;
   padding: 0px 20px;
@@ -38,50 +93,19 @@ body{
   top: 10px;
   right: 18px;
 }
-.button{
-  color:white;
-  background-color: #14597f;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #0b2d3d;
-  border-radius: 4px;
-  transition: background-color 0.2s;
-}
-.button:hover{
-  background-color: #1fb5e9;
-}
-#homeImage{
-  float: right;
-  width: 600px;
-  height: auto;
-  width: 200px;
-  height: auto;
-}
-header{
-  text-align: center;
-  background-color: #14597f;
-  height: 60px;
-  color: #FFFFFF;
-}
-.active:active, .pagecourante{
-  background-color: #1fb5e9;
-  border-style: solid;
-  border-radius: 4px;
-  border-width: 2px;
+.entete{ /*contenu de l'entete*/
+  width: 1160px;
+  margin: auto;
 }
 
-/*Entête*/
-.logolink{
-  margin-top: 5px;
-  float: left;
-  font-size: 18px;
-}
-.navlink{
-  color: #FFF;
-  text-decoration: none;
-  margin-top: 15px;
+/*Page d'acceuil*/
+#homeImage{
   float: right;
-  padding: 0px 20px;
+  width: 400px;
+  height: auto;
+}
+.bouttonaccueil{
+  font-size: 24px;
 }
 
 /*Pied de page*/
@@ -90,19 +114,15 @@ header{
   margin-right: auto;
   padding: 0px 20px;
 }
-.bouttonaccueil{
-  font-size: 24px;
-}
-.entete{
-  width: 1160px;
-  margin: auto;
-}
+
 footer{
   flex-shrink: 0;
   background-color: #eeeeee;
   height: 70px;
   border-top: 1px solid #cccccc;
 }
+
+/*Pages des produits*/
 .regroupementbouttons{
   margin-top: 5px;
 }
@@ -129,7 +149,7 @@ footer{
   float: right;
   padding-right: 10px;
 }
-.mainboard{
+.mainboard{ 
   text-align: left;
   font-size: larger;
 }
@@ -163,28 +183,12 @@ footer{
   background-color: #ddf2fb;
 }
 
-/*général*/
-.form-control{
-  border:1px solid #999999;
-  border-radius: 4px;
-}
-.col{
-  display: flex;
-  flex-wrap:wrap;
-}
-.row{
-  display: flex;
-  flex-direction: column;
-}
 
 /*Page Contact*/
 .col1, .col2, .col3{
   width:33.33%;
   text-align:center;
 }
-
-/*Page d'un produit*/
-
 
 /*Page Panier*/
 #paniertable{
@@ -221,7 +225,7 @@ footer{
 }
 
 /*Page de commande*/
-.col50st, .col50nd{
+.col50st, .col50nd{ /*utilisé ausis pour la page d'un produit*/
   width:50%;
 }
 #firstname, #lastname, #creditcard{
