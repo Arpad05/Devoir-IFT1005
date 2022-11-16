@@ -60,7 +60,7 @@ header{
   background-color: #1fb5e9;
   border-style: solid;
   border-radius: 4px;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 .logolink{
@@ -215,7 +215,7 @@ footer{
   background-color: #bbbbbb;
 }
 
-#btncommande, #total, #btnpayer, #formajout{
+#btncommande, #total, #btnpayer, #formajout, #nbrproduits{
   float:right;
   clear:right;
   text-decoration: none;
