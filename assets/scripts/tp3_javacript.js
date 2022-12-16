@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
     var elementVisible = window.localStorage.getItem('itemsInBasket') === 'true';
-    // // Si l'élément n'était pas visible avant le rechargement de la page, on le cache
+    // Si l'élément n'était pas visible avant le rechargement de la page, on le cache
     if (!elementVisible) {
         $('.count').hide();
     }else{
