@@ -1,146 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>OnlineShop - Accueil</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/CSS_source-code.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  </head>
-
-<body>
-  <!-- TODO -->
+<head>
+  <meta charset="UTF-8">
+  <title>OnlineShop - Produits</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./assets/scripts/jquery-3.2.1.min.js"></script>
+</head>
+<body onload = "chargementFichierJson()">
   <header>
-    <div class="entete">
+    <div class="header-container">
+      <div class="logo">
+        <a href="./index.html">
+          <img alt="logo" src="./assets/img/logo.svg" title="Accueil">
+        </a>
+      </div>
       <nav>
-        <a href="index.html" class="logolink">
-          <!--les caracthéristiques width et height sont des attributs html supporté par html5
-        pour certaines éléments comme des images-->
-          <!--test-->
-          <img src="assets/img/logo.svg" alt="logo" width="250" height="50">
-        </a>
-        <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-            <i class="fa fa-shopping-cart fa-stack-1x"></i>
-          </span>
-          <span class="count">3</span>
-        </a>
-        <a href="contact.html" class="navlink active">Contact</a>
-        <a href="products.html" class="navlink active pagecourante">Produits</a>
-        <a href="index.html" class="navlink active">Accueil</a>
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li class="active"><a href="./products.html">Produits</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li>
+            <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-shopping-cart fa-stack-1x"></i>
+              </span>
+              <span class="count">0</span>
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
-  <div class="contenu">
-    <table id="productslist">
-      <div>
-      <th></th>
-      <th class="mainboard">
-        <h1>Produits</h1>
-      </th>
-      </div>
-      <tr class="barreproduits">
-        <div>
-        <td rowspan="2" class="barreLateral">
-          <!--Boutons de filtration-->
-	  <h4>Catégorie de produits</h4>
-          <div class=" btn-group" id=" productcategories">
-            <button class="categorybuttons selected">Appareil photos</button><br>
-            <button class="categorybuttons selected">Consoles</button><br>
-            <button class="categorybuttons selected">Écrans</button><br>
-            <button class="categorybuttons selected">Ordinateurs</button><br>
-            <button class="categorybuttons selected">Tous les produits</button><br>
-          </div>
-	  <br>
-	  <h4>Critères de triage</h4>
-          <div class="btn-group" id="productcriteria">
-            <button class="categorybuttons selected">Prix (bas-haut)</button><br>
-            <button class="categorybuttons selected">Prix (haut-bas)</button><br>
-            <button class="categorybuttons selected">Nom (A-Z)</button><br>
-            <button class="categorybuttons selected">Nom (Z-A)</button><br>
-          </div>
-        </td>
+  <main>
+    <section class="sidebar" aria-label="Filtres">
+      <section>
+        <h2>Catégories</h2>
+        <div class="btn-group vertical" id="product-categories" onclick="filtre1()">
+          <button>Appareils photo</button>
+          <button>Consoles</button>
+          <button>Écrans</button>
+          <button>Ordinateurs</button>
+          <button class="selected">Tous les produits</button>
         </div>
-        <!--premier ligne de produits-->
-        <td class="productsborder form-control">
-          <div name="computers" id="5">
-            <a href="product.html">
-              <h3>Portable</h3>
-              <img src="assets/img/laptop-1.png" alt="laptop-1" width="300" height="auto">
-              <p class="prixproducts">699.99$</p>
-            </a>
-          </div>
-        </td>
-        <td class="productsborder form-control">
-          <div name="screens" id="8">
-            <a href="product.html">
-              <h3>Moniteur 19"</h3>
-              <img src="assets/img/monitor.png" alt="monitor" width="300" height="auto">
-              <p class="prixproducts">149.99$</p>
-            </a>
-          </div>
-        </td>
-        <td class="productsborder form-control">
-          <div name="cameras" id="2">
-            <a href="product.html">
-              <h3>Canon EOS 5D Mark II</h3>
-              <img src="assets/img/camera-1.png" alt="camera-1" width="300" height="auto">
-              <p class="prixproducts">2999.99$</p>
-            </a>
-          </div>
-        </td>
-      </tr>
-      <!--nouvelle ligne de produit-->
-      <tr class="barreproduits">
-        <td class="productsborder form-control">
-          <div name="screens" id="10">
-            <a href="product.html">
-              <h3>Téléviseur 50"</h3>
-              <img src="assets/img/tv.png" alt="tv50" width="300" height="auto">
-              <p class="prixproducts">899.99$</p>
-            </a>
-          </div>
-        </td>
-        <td class="productsborder form-control">
-          <div name="consoles" id="12">
-            <a href="product.html">
-              <h3>Console Xbox One</h3>
-              <img src="assets/img/xbox.png" alt="xbox" width="300" height="auto">
-              <p class="prixproducts">399.99$</p>
-            </a>
-          </div>
-        </td>
-        <td class="productsborder form-control">
-          <div name="computers" id="6">
-            <a href="product.html">
-              <h3>Portable professionnel</h3>
-              <img src="assets/img/laptop-2.png" alt="laptop-2" width="300" height="auto">
-              <p class="prixproducts">599.99$</p>
-            </a>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="4">
-          <p id="nbrproduits">produits 1-6</p>
-        </td>
-      </tr>
-
-    </table>
-  </div>
+      </section>
+      <section>
+        <h2>Classement</h2>
+        <div class="btn-group vertical" id="product-criteria" onclick="filtre2()">
+          <button class="selected">Prix (bas-haut)</button>
+          <button>Prix (haut-bas)</button>
+          <button>Nom (A-Z)</button>
+          <button>Nom (Z-A)</button>
+        </div>
+      </section>
+    </section>
+    <article>
+      <span class="right-header" id="products-count">13 produits</span>
+      <h1>Produits</h1>
+      <div class="products" id="products-list">
+        <div class="product">
+          <a href="./product.html" title="En savoir plus...">
+            <h2>Manette Xbox 360</h2>
+            <img alt="Manette Xbox 360" src="./assets/img/xbox-controller.png">
+            <p class="price"><small>Prix</small> 29,99&thinsp;$</p>
+          </a>
+        </div>
+        <div class="product">
+          <a href="./product.html" title="En savoir plus...">
+            <h2>Moniteur 19"</h2>
+            <img alt="Moniteur 19&quot;" src="./assets/img/monitor.png">
+            <p class="price"><small>Prix</small> 149,99&thinsp;$</p>
+          </a>
+        </div>
+        <div class="product">
+          <a href="./product.html" title="En savoir plus...">
+            <h2>Console Wii</h2>
+            <img alt="Console Wii" src="./assets/img/wii.png">
+            <p class="price"><small>Prix</small> 199,99&thinsp;$</p>
+          </a>
+        </div>
+        <div class="product">
+          <a href="./product.html" title="En savoir plus...">
+            <h2>Apple TV</h2>
+            <img alt="Apple TV" src="./assets/img/apple-tv.png">
+            <p class="price"><small>Prix</small> 249,99&thinsp;$</p>
+          </a>
+        </div>
+        <div class="product">
+          <a href="./product.html" title="En savoir plus...">
+            <h2>Canon PowerShot SD1300</h2>
+            <img alt="Canon PowerShot SD1300" src="./assets/img/camera-3.png">
+            <p class="price"><small>Prix</small> 299,99&thinsp;$</p>
+          </a>
+        </div>
+        <div class="product">
+          <a href="./product.html" title="En savoir plus...">
+            <h2>Console PS3</h2>
+            <img alt="Console PS3" src="./assets/img/ps3.png">
+            <p class="price"><small>Prix</small> 349,99&thinsp;$</p>
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
   <footer>
-    <table class="footertable">
-      <tr>
-        <td>Arpad Botond Rigo</td>
-        <td>Matricule:20241538</td>
-      </tr>
-      <tr>
-        <td>Anna Oltean</td>
-        <td>Matricule:20252567</td>
-      </tr>
-
+    <p>Par Amal Ben Abdellah</p>
   </footer>
 </body>
-
 </html>

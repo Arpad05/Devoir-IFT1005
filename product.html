@@ -1,86 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>OnlineShop - Accueil</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/CSS_source-code.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  </head>
-
-<body>
+<head>
+  <meta charset="UTF-8">
+  <title>OnlineShop - Produit</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./assets/scripts/jquery-3.2.1.min.js"></script>
+</head>
+<body onload = "chargementProduit()">
   <header>
-    <div class="entete">
+    <div class="header-container">
+      <div class="logo">
+        <a href="./index.html">
+          <img alt="logo" src="./assets/img/logo.svg" title="Accueil">
+        </a>
+      </div>
       <nav>
-        <a href="index.html" class="logolink">
-          <!--les caracthéristiques width et height sont des attributs html supporté par html5
-        pour certaines éléments comme des images-->
-          <!--test-->
-          <img src="assets/img/logo.svg" alt="logo" width="250" height="50">
-        </a>
-        <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-            <i class="fa fa-shopping-cart fa-stack-1x"></i>
-          </span>
-          <span class="count">3</span>
-        </a>
-        <a href="contact.html" class="navlink active">Contact</a>
-        <a href="products.html" class="navlink active">Produits</a>
-        <a href="index.html" class="navlink active">Accueil</a>
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li class="active"><a href="./products.html">Produits</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li>
+            <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-shopping-cart fa-stack-1x"></i>
+              </span>
+              <span class="count">0</span>
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
-  <div class="contenu">
-		<h1> Portable professionnel</h1>
-		<section class="col">
-			<div class="col50st">
-		  	
-		  	<img src="assets/img/laptop-2.png" alt="laptop-2" width="450" height="auto">
-			</div> 
-		 
-			<div class="col50nd">
-				<h2>Description:</h2>
-				<p>
-					Portable professionnel idéal pour le travail à la maison ou dans une petite entreprise.<br>
-					L’ordinateur dispose d’un grand nombre de ports (HDMI, VGA, USB, Ethernet, etc.) ce qui facilite le branchement de
-					différents périphériques.<br>
-					Le portable est équipé d’un processeur i5 de troisième génération, de 8 Go de RAM et d’un disque dur SSD de 256
-					Go.<br>
-				</p>
-				<h2>
-					Caractéristiques:
-				</h2>
-				<ul>
-					<li>Processus i5 de troisième génération</li>
-					<li>8 Go de RAM</li>
-					<li>Disque SSD de 256 Go</li>
-					<li>Ports HDMI, VGA, USB, Ethernet et Firewire</li>
-					<li>Construction robuste</li>
-				</ul>
-				<hr>
-				Prix:<b> 599.99$</b>
-				<form id="formajout">
-				  Quantité:<input type="number" name="amount" value="1" min="1" class="control-form">
-				  <input type="submit" value="Ajouter" class="button">
-				</form>
-			</div>
-		</section>
-
-    
-  </div>
+  <main>
+    <article>
+      <h1>Manette Xbox 360</h1>
+      <div class="row">
+        <div class="col">
+          <img id="product-image" alt="Manette Xbox 360" src="./assets/img/xbox-controller.png">
+        </div>
+        <div class="col">
+          <section>
+            <h2>Description</h2>
+            <p>Manette pouvant être branchée à une console Xbox 360 et un PC. Cette manette vous permettra de jouer à vos jeux vidéo préférés.
+            De plus, cette manette est sans fil et comporte un port pour casque d'écoute.</p>
+          </section>
+          <section>
+            <h2>Caractéristiques</h2>
+            <ul>
+              <li>Manette sans fil 2.4GHz avec adapteur USB</li>
+              <li>Compacte et ergonomique</li>
+              <li>Port pour casque d'écoute pour Xbox Live</li>
+            </ul>
+          </section>
+          <hr>
+          <form id="add-to-cart-form" class="pull-right">
+            <label for="product-quantity">Quantité:</label>
+            <input class="form-control" id="product-quantity" type="number" value="1" min="1">
+            <button id="add-btn" class="btn" title="Ajouter au panier" type="submit" onclick="submitForm(event);">
+              <i class="fa fa-cart-plus"></i>&nbsp; Ajouter
+            </button>
+          </form>
+          <p>Prix: <strong>29,99&thinsp;$</strong></p>
+        </div>
+      </div>
+    </article>
+  </main>
   <footer>
-    <table class="footertable">
-      <tr>
-        <td>Arpad Botond Rigo</td>
-        <td>Matricule:20241538</td>
-      </tr>
-      <tr>
-        <td>Anna Oltean</td>
-        <td>Matricule:20252567</td>
-      </tr>
-
+    <p>Par Amal Ben Abdellah</p>
   </footer>
 </body>
-
 </html>
