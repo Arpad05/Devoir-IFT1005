@@ -6,6 +6,8 @@
   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Chargement de la bibliothèque jQuery Validate -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
   <script type="text/javascript" src="./assets/scripts/jquery-3.2.1.min.js"></script>
 </head>
 <body>
@@ -86,7 +88,7 @@
             </div>
           </div>
         </section>
-        <button class="btn pull-right" type="submit">Payer <i class="fa fa-angle-double-right"></i></button>
+        <button class="btn pull-right" type="submit" onclick="updateCommande(); updateCommandeText(); newCommande();">Payer <i class="fa fa-angle-double-right"></i></button>
       </form>
     </article>
   </main>
