@@ -1,7 +1,7 @@
 # Devoir-IFT1005
 ## Travail réalisé dans le cadre du cours IFT1005 le trimestre d'automne 2022 à l'Université de Montréal
 
-Créateurs : Arpad Botond Rigo (20241538), Anna Oltean (20252567) et Charlotte (XXXXXXXX)
+Créateurs : Arpad Botond Rigo (20241538), Anna Oltean (20252567) et Charlotte de Lanauze (20078840)
 - - -
 Pour faire fonctionner les requêtes AJAX depuis le fichier JSON:
   1. Aller au repertoir contenant les fichiers du projet (la racine du projet)
