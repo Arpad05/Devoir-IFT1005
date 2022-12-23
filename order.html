@@ -39,20 +39,20 @@
   <main>
     <article>
       <h1>Commande</h1>
-      <form action="./confirmation.html" method="get" id="form-order">
+      <form action="./confirmation.html" method="gt" id="form-order">
         <section>
           <h2>Contact</h2>
           <div class="row">
             <div class="col">
               <div class="form-group">
-                <label for="first-name">Prénom</label>
-                <input class="form-control" type="text" id="first-name" name="first-name" placeholder="Prénom">
+                <label for="first_name">Prénom</label>
+                <input class="form-control" type="text" id="first_name" name="first_name" placeholder="Prénom">
               </div>
             </div>
             <div class="col">
               <div class="form-group">
-                <label for="last-name">Nom</label>
-                <input class="form-control" type="text" id="last-name" name="last-name" placeholder="Nom">
+                <label for="last_name">Nom</label>
+                <input class="form-control" type="text" id="last_name" name="last_name" placeholder="Nom">
               </div>
             </div>
           </div>
@@ -76,19 +76,19 @@
           <div class="row">
             <div class="col">
               <div class="form-group">
-                <label for="credit-card">Numéro de carte de crédit</label>
-                <input class="form-control" type="text" id="credit-card" name="credit-card" placeholder="•••• •••• •••• ••••">
+                <label for="credit_card">Numéro de carte de crédit</label>
+                <input class="form-control" type="text" id="credit_card" name="credit_card" placeholder="•••• •••• •••• ••••">
               </div>
             </div>
             <div class="col">
               <div class="form-group">
-                <label for="credit-card-expiry">Expiration (mm/aa)</label>
-                <input class="form-control" type="text" id="credit-card-expiry" name="credit-card-expiry" pattern="((0[0-9])|(1[0-2]))/[0-9][0-9]" placeholder="mm/aa">
+                <label for="credit_card_expiry">Expiration (mm/aa)</label>
+                <input class="form-control" type="text" id="credit_card_expiry" name="credit_card_expiry" pattern="((0[0-9])|(1[0-2]))/[0-9][0-9]" placeholder="mm/aa">
               </div>
             </div>
           </div>
         </section>
-        <button class="btn pull-right" type="submit" onclick="updateCommande(); updateCommandeText(); newCommande();">Payer <i class="fa fa-angle-double-right"></i></button>
+        <button class="btn pull-right" type="submit" id="soumission" >Payer <i class="fa fa-angle-double-right"></i></button>
       </form>
     </article>
   </main>
