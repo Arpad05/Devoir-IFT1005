@@ -6,6 +6,9 @@
   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Chargement de la bibliothèque jQuery Validate -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script>
   <script type="text/javascript" src="./assets/scripts/jquery-3.2.1.min.js"></script>
 </head>
 <body>
@@ -43,14 +46,14 @@
           <div class="row">
             <div class="col">
               <div class="form-group">
-                <label for="first-name">Prénom</label>
-                <input class="form-control" type="text" id="first-name" name="first-name" placeholder="Prénom" required>
+                <label for="first_name">Prénom</label>
+                <input class="form-control" type="text" id="first_name" name="first_name" placeholder="Prénom">
               </div>
             </div>
             <div class="col">
               <div class="form-group">
-                <label for="last-name">Nom</label>
-                <input class="form-control" type="text" id="last-name" name="last-name" placeholder="Nom" required>
+                <label for="last_name">Nom</label>
+                <input class="form-control" type="text" id="last_name" name="last_name" placeholder="Nom">
               </div>
             </div>
           </div>
@@ -58,13 +61,13 @@
             <div class="col">
               <div class="form-group">
                 <label for="email">Adresse courriel</label>
-                <input class="form-control" type="email" id="email" name="email" placeholder="Adresse courriel" required>
+                <input class="form-control" type="email" id="email" name="email" placeholder="Adresse courriel">
               </div>
             </div>
             <div class="col">
               <div class="form-group">
                 <label for="phone">Téléphone</label>
-                <input class="form-control" type="tel" id="phone" name="phone" placeholder="###-###-####" required>
+                <input class="form-control" type="tel" id="phone" name="phone" placeholder="###-###-####">
               </div>
             </div>
           </div>
@@ -74,24 +77,27 @@
           <div class="row">
             <div class="col">
               <div class="form-group">
-                <label for="credit-card">Numéro de carte de crédit</label>
-                <input class="form-control" type="text" id="credit-card" name="credit-card" placeholder="•••• •••• •••• ••••" required>
+                <label for="credit_card">Numéro de carte de crédit</label>
+                <input class="form-control" type="text" id="credit_card" name="credit_card" placeholder="•••• •••• •••• ••••">
               </div>
             </div>
             <div class="col">
               <div class="form-group">
-                <label for="credit-card-expiry">Expiration (mm/aa)</label>
-                <input class="form-control" type="text" id="credit-card-expiry" name="credit-card-expiry" pattern="((0[0-9])|(1[0-2]))/[0-9][0-9]" placeholder="mm/aa" required>
+                <label for="credit_card_expiry">Expiration (mm/aa)</label>
+                <input class="form-control" type="text" id="credit_card_expiry" name="credit_card_expiry" pattern="((0[0-9])|(1[0-2]))/[0-9][0-9]" placeholder="mm/aa">
               </div>
             </div>
           </div>
         </section>
-        <button class="btn pull-right" type="submit">Payer <i class="fa fa-angle-double-right"></i></button>
+        <button class="btn pull-right" type="submit" id="soumission" >Payer <i class="fa fa-angle-double-right"></i></button>
       </form>
     </article>
   </main>
   <footer>
-    <p>Par Amal Ben Abdellah</p>
+    <p>Arpad Botond Rigo (20241538)
+       Anna Oltean (20252567)
+       Charlotte de Lanauze (20078840)
+    </p>
   </footer>
 </body>
 </html>
