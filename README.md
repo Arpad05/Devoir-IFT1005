@@ -16,3 +16,14 @@ Les produits qui ont été ajoutés dans le panier sont enregistrés dans le Loc
 Une fois que la commande a été passé, un objet facture est créé dans ce même emplacement et le panier sera vidé.
 - - -
 ### Captures d'écrans:
+  1. Sur ordinateur:
+  
+![pageAccueil](https://github.com/Arpad05/Devoir-IFT1005/blob/main/IFT-1005_ScreenShots/Capture.JPG)
+![pageProduits](https://github.com/Arpad05/Devoir-IFT1005/blob/main/IFT-1005_ScreenShots/Capture1.JPG)
+![pageContact](https://github.com/Arpad05/Devoir-IFT1005/blob/main/IFT-1005_ScreenShots/Capture2.JPG)
+  
+  
+  2. Sur cellulaire:
+  
+![accueil](https://github.com/Arpad05/Devoir-IFT1005/blob/main/IFT-1005_ScreenShots/Screenshot_20221229-132455.png)
+![produits](https://github.com/Arpad05/Devoir-IFT1005/blob/main/IFT-1005_ScreenShots/Screenshot_20221229-132546.png)
